@@ -73,18 +73,18 @@
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.92\linewidth]{figs/image.png}
-    \caption{文件中类的成员方法供给关系图}
+    \caption{文件中类供给关系图}
     \label{fig:vit-arch}
 \end{figure}
 % Oringin Objectives
 \section{原书内容复现}
-\indent 该项目原有 8 个 Python 文件，我在修改后共包含 9 个文件。如图所示，上图箭头文件1指向文件2表示文件1向文件2提供了对象并任由其查看与修改。体现了面向对象程序设计思想\\
+\indent 该项目原有 8 个 Python 文件，{\color{red}我在修改后共包含 9 个文件}。{\color{red}如图所示，上图箭头文件1指向文件2表示文件1向文件2提供了对象并任由其查看与修改}。体现了面向对象程序设计思想\\
 \indent alien\_invasion.py 是主程序，通过调用其他类的属性与方法控制游戏流程。例如在 \_check\_keydown\_events 中修改 Ship 对象的 moving\_right 等属性来实现飞船移动。\\
 \indent Settings 类 负责管理所有游戏参数（飞船、子弹、外星人速度等）。该类实例在主程序中创建，其它类通过传入 AlienInvasion 实例来访问全局设置。ScoreBoard 类 用于管理界面文字，包括字体、颜色、位置和动态更新的分数等显示内容。GameState 类 用于记录与重置游戏状态。\\
 \indent Ship 类 定义飞船的大部分属性（位置、图像、移动方式等），并实现移动检测、边界判断、位置重置与绘制等方法。Alien 类 与 Ship 类结构类似，每个 Alien 实例代表一个独立外星人对象。\\
 \indent Button 类 则负责“Play”按钮的外观与绘制，点击逻辑在主程序中处理。Bullet 类 定义子弹的矩形外形、初始位置以及移动与绘制方法，子弹与外星人的碰撞检测逻辑同样写在主程序中。外星人与子弹均以 Group 的形式统一管理。
 % Experiment Objective
-\section{实验内容的实现}
+\section{{\color{red}实验内容的实现}}
 \indent 实验要求我们在原书的基础上实现以下两个功能：
 \begin{enumerate}
     \item[功能1]: 实现最高分记录;\\
@@ -95,7 +95,7 @@
 \end{enumerate}
 
 % Implementation Details
-\section{个人创新的实现}
+\section{{\color{red}个人创新的实现}}
 思来想去，游戏做到这里的可玩性还是太低了，要想别人玩你的游戏玩得high，还得再做点调整。
 \begin{enumerate}
     \item[Part 1]: Random is all you need;\\
