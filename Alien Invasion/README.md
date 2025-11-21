@@ -1,3 +1,4 @@
+  You need the package of pygame.  
   Download these and just run the python file of alien_invasion is OK.  
   Pressing the right or left arrow key can control the ship to move right or left.  
   Pressing the shift key can restore shield if your shield is broken.  
